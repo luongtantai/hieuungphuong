@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="css.css">
+<script src="main.js"></script>
+<title>buttom</title>
+</head>
+<body>
+    <div>
+        <input type="text" placeholder="Phương muốn ghi gì thì nhập vào đây..." id="name">
+        <input type="submit" value="Nhập" id="name1" onclick="onClick()">
+    </div>
+    <div >
+        <h2 contenteditable="true" class="text" id="text">text</h2>
+    </div>
+    <script>
+        function onClick(){
+            var name = document.getElementById('name').value;
+            document.getElementById('text').innerHTML= name;
+            console.log(name)
+        }
+    </script>
+</body>
+</html>
